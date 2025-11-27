@@ -1,0 +1,57 @@
+
+nav {
+    position: fixed;     /* fija el navbar en pantalla */
+    top: 0;              /* pegado arriba */
+    left: 0;
+    right: 0;
+    height: calc(100% - 18px);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px 20px;
+    margin: 9px;
+    z-index: 100;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);        /* para que esté encima de otros elementos */
+}
+
+.container{
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.navbuttons{
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbuttons:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.navbuttons:active {
+    filter: invert(0.9);
+  }
+
+
+@media (max-width:600px){
+    
+    nav {
+        justify-content: center;
+        width: calc(100% - 18px);
+        height: 80px;
+        top: calc(90% - 1vh);
+    }
+    .container{
+        flex-direction:row;
+        width: 90%;
+        height: fit-content;
+    }
+}
