@@ -13,7 +13,7 @@ export async function getProductsSearch(text:any) {
 export async function getProductsID(id:number) {
 
   const data = await fetch(
-    `https://backendnestecommercemotorshop-production.up.railway.app/api/products/${(id)}, { cache: "no-store" }`
+    `https://backendnestecommercemotorshop-production.up.railway.app/api/products/${(id)}`
   );
   if (!data.ok) {
     throw new Error("Error al obtener el producto");
