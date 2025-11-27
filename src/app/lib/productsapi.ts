@@ -5,7 +5,7 @@ export async function getProducts() {
 
 export async function getProductsSearch(text:any) {
   const data = await fetch(
-    `https://backendnestecommercemotorshop-production.up.railway.app/api/products/search?name=${encodeURIComponent(text), { cache: "no-store" }}`
+    `https://backendnestecommercemotorshop-production.up.railway.app/api/products/search?name=${encodeURIComponent(text)}`
   );
   return await data.json();
 }
