@@ -33,10 +33,10 @@ export default async function Home() {
         </div>
 
         <div id={styles.categoriescontainer}>
-          <Link href={`/productsearch?name=${encodeURIComponent("rines")}`}><div className={styles.categoriesdiv}><img src="/categoria_1.png" alt="" /> <div className={styles.categoriestitle}>Rines</div></div> </Link>
+          <Link href={`/productsearch?name=${encodeURIComponent("rin")}`}><div className={styles.categoriesdiv}><img src="/categoria_1.png" alt="" /> <div className={styles.categoriestitle}>Rines</div></div> </Link>
           <Link href={`/productsearch?name=${encodeURIComponent("aceite")}`}><div className={styles.categoriesdiv}><img src="/categoria_2.png" alt="" /> <div className={styles.categoriestitle}>Aceites</div></div></Link>
           <Link href={`/productsearch?name=${encodeURIComponent("escape")}`}><div className={styles.categoriesdiv}><img src="/categoria_3 (3).png" alt="" /> <div className={styles.categoriestitle}>Escapes</div></div></Link>
-          <Link href={`/productsearch?name=${encodeURIComponent("velocimetro")}`}><div className={styles.categoriesdiv}><img src="/categoria_3 (2).png" alt="" /> <div className={styles.categoriestitle}>Velocimetros</div></div></Link>
+          <Link href={`/productsearch?name=${encodeURIComponent("velocímetro")}`}><div className={styles.categoriesdiv}><img src="/categoria_3 (2).png" alt="" /> <div className={styles.categoriestitle}>Velocimetros</div></div></Link>
           <Link href={`/productsearch?name=${encodeURIComponent("pantalla")}`}><div className={styles.categoriesdiv}><img src="/categoria_3 (1).png" alt="" /> <div className={styles.categoriestitle}>Pantallas</div></div></Link>
         </div>
 
